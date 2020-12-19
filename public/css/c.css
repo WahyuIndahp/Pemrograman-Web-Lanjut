@@ -1,0 +1,192 @@
+*{
+    margin: 5px;
+    padding: 0;
+    color: rgb(155, 0, 0);
+    box-sizing: border-box;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+}  
+body{
+    background: grey;
+    color: rgb(155, 0, 0);
+}
+nav{
+    background: black;
+}
+nav::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+nav .logo{
+    float: left;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+    font-weight: 600px;
+    line-height: 70px;
+    padding-left: 40px;
+}
+nav ul{
+    float: right; 
+    list-style: none;
+    margin-right: 50px;
+    position: relative;
+}
+nav ul li{
+    float: left;
+    display: block;
+    margin: 10px 0px;  
+}
+nav ul li a{
+    color: rgb(190, 162, 162); 
+    text-decoration: none;
+    line-height: 50px;
+    font-weight: bolder;
+    font-size: 12px;
+    padding: 8px 10px;
+}
+nav ul li a:hover{
+    color: whitesmoke;
+    background: rgba(155, 0, 0, 0.658);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgb(228, 228, 245),
+                0 0 15px rgb(219, 230, 255);
+}
+nav ul ul{
+    position: absolute;
+    background:  rgba(155, 0, 0, 0.658);
+    border-top: 3px solid rgb(163, 159, 159);
+    opacity: 0;
+    visibility: hidden;
+    transition: bottom .3s;
+}
+nav ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+nav ul ul li{
+    position: relative;
+    margin: 0;
+    width: 130px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+nav ul ul li a{
+    line-height: 50px;
+}
+.greeting h1{
+    margin-top: 15px;
+    font-size: 50px;
+    font-family: 'Times New Roman';
+    font-weight: bolder;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    color: whitesmoke;
+}
+.judul{
+    border: 2px solid white;
+    margin: 20px;
+    padding: 10px;
+}
+.judul h2{
+    font-size: 40px;
+    color: rgb(255, 0, 0);
+}
+.judul p{
+    text-align: justify;
+    font-size: 18px;
+    color: black;
+}
+.judul h3{
+    font-size: 20px;
+    color: rgb(126, 0, 38);
+    font-style: oblique;
+    border: 2px solid rgb(128, 0, 60);
+    padding: 3px;
+}
+.img-responsive{
+    position: relative;
+    width: 70%;
+    height: 50%;
+    margin-left: 15%;
+    border: 2px solid blue;
+}
+/*----------------------------*\
+   category
+\*----------------------------*/
+.ctg{
+    border: 2px solid rgb(0, 0, 0);
+    padding: 15px;
+    width: 1150px;
+    height: 345px;
+    margin-top: 50px;
+}
+.section-title{
+    color: rgb(252, 252, 252);
+    font-style: italic;
+    font-size: 25px;
+    margin-bottom: 15px;
+    border: 2px solid rgb(255, 1, 1);
+    font-family: cursive;
+}
+.category-widget a{
+    font-size: 20px;
+    text-decoration: none;
+}
+.category-widget ul li {
+    display:block;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eceef2;
+}
+.category-widget ul li + li {
+    margin-top:10px;
+}
+.category-widget ul li > a {
+    display:block;
+    -webkit-transition:0.2s color;
+    transition:0.2s color;
+}
+.category-widget ul li > a > span {
+    float:right;
+    color:#fff;
+    padding:0px 5px;
+    font-weight:600;
+    border-radius:2px;
+}
+.category-widget ul li > a.cat-1 > span {
+    background-color: #f8b600;
+}
+.category-widget ul li > a.cat-2 > span {
+    background-color: #ff9100;
+}
+.category-widget ul li > a.cat-3 > span {
+    background-color: #8d00ff;
+}
+.category-widget ul li > a.cat-4 > span {
+    background-color: #0078ff;
+}
+
+.category-widget ul li > a.cat-5 > span {
+    background-color: #ff0040;
+}
+.category-widget ul li > a:hover, .category-widget ul li > a:focus {
+    text-decoration:none;
+}
+.category-widget ul li > a.cat-1:hover, .category-widget ul li > a.cat-1:focus {
+    color: #4BB92F;
+}
+.category-widget ul li > a.cat-2:hover, .category-widget ul li > a.cat-2:focus {
+    color: #ff8700;
+}
+.category-widget ul li > a.cat-3:hover, .category-widget ul li > a.cat-3:focus {
+    color: #0078ff;
+}
+.category-widget ul li > a.cat-4:hover, .category-widget ul li > a.cat-4:focus {
+    color: #8d00ff;
+}
+
+.category-widget ul li > a.cat-5:hover, .category-widget ul li > a.cat-4:focus {
+    color: #00ff9d;
+}

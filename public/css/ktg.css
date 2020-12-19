@@ -1,0 +1,181 @@
+*{
+    margin: 5px;
+    padding: 0;
+    color: rgb(155, 0, 0);
+    box-sizing: border-box;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+}  
+body{
+    background: grey;
+}
+nav{
+    background: black;
+}
+nav::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+nav .logo{
+    float: left;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+    font-weight: 600px;
+    line-height: 70px;
+    padding-left: 40px;
+}
+nav ul{
+    float: right; 
+    list-style: none;
+    margin-right: 50px;
+    position: relative;
+}
+nav ul li{
+    float: left;
+    display: block;
+    margin: 10px 0px;  
+}
+nav ul li a{
+    color: rgb(190, 162, 162); 
+    text-decoration: none;
+    line-height: 50px;
+    font-weight: bolder;
+    font-size: 12px;
+    padding: 8px 10px;
+}
+nav ul li a:hover{
+    color: whitesmoke;
+    background: rgba(155, 0, 0, 0.658);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgb(228, 228, 245),
+                0 0 15px rgb(219, 230, 255);
+}
+nav ul ul{
+    position: absolute;
+    background:  rgba(155, 0, 0, 0.658);
+    border-top: 3px solid rgb(163, 159, 159);
+    opacity: 0;
+    visibility: hidden;
+    transition: bottom .3s;
+}
+nav ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+nav ul ul li{
+    position: relative;
+    margin: 0;
+    width: 130px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+nav ul ul li a{
+    line-height: 50px;
+}
+.greeting h1{
+    margin-top: 15px;
+    font-size: 50px;
+    font-family: 'Times New Roman';
+    font-weight: bolder;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    color: whitesmoke;
+}
+.card-header{
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.data{
+    border: 3px solid #000000;
+    margin-top: 20px;
+    width: 900px;
+    margin-left: 14%;
+    background-color: rgba(255, 255, 255, 0.637);
+}
+.data tr th{
+    color: black;
+    border: 3px solid black;
+    padding: 5px 80px;
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.data tr td{
+    padding: 15px 80px;
+    color: black;
+    text-align: justify;
+    border: 3px solid black;
+    font-family: 'times new roman';
+    font-size: 20px;
+}
+.btn-tambah {
+    position: relative;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: 30px;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-left: 13.7%;
+}
+form{
+    width: 400px;
+    position: relative;
+    margin-top: 70px;
+    margin-left: 35%;
+    background: rgba(255, 255, 255, 0.904);
+    padding: 5px;
+    border-radius: 30px;
+}
+.text-md-right{
+    position: relative;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: cursive;
+    color: rgb(0, 0, 0);
+    margin-left: 45px;
+}
+.form-control{
+    height: 25px;
+    width: 300px;
+    margin-left: 40px;
+    border: 1.5px solid rgb(0, 0, 0);
+}
+.btn-save{
+    margin-left: 35%;
+    position: relative;
+    background-color: rgba(148, 26, 26, 0.884);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.btn_edit{
+    position: relative;
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+.btn_del{
+    position: relative;
+    background-color: rgb(0, 17, 255);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 40px;
+}
